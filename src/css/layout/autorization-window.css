@@ -1,0 +1,178 @@
+.authorization-backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+.authorization-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 335px;
+  width: 100%;
+  min-height: 384px;
+  padding: 40px 24px;
+  background-color: var(--body-bg-color);
+  border: 2px solid var(--header-border-color);
+  border-radius: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .authorization-modal {
+    max-width: 579px;
+    min-height: 516px;
+    padding: 80px 40px 40px;
+  }
+}
+
+.user-email-wrapper,
+.user-password-wrapper {
+  position: relative;
+}
+
+.input-img-mail {
+  position: absolute;
+  display: block;
+  top: 20%;
+  right: 5%;
+  stroke: var(--header-icon-color);
+  fill: transparent;
+}
+
+.input-img-pass {
+  position: absolute;
+  display: block;
+  top: 20%;
+  right: 5%;
+  stroke: var(--header-icon-color);
+  fill: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .input-img-mail {
+    width: 28px;
+    height: 28px;
+  }
+
+  .input-img-pass {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.authorization-input {
+  width: 100%;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  border: 2px solid var(--border-color);
+  border-radius: 40px;
+
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+.authorization-input::placeholder {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .authorization-input {
+    padding: 20px 40px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.authorization-form-submit,
+.authorization-sign-in-btn {
+  padding: 16px 24px;
+  margin-bottom: 14px;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 40px;
+
+  font-size: 16px;
+  line-height: 1.33px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--auth-submit-btn-text-color);
+  background-color: var(--auth-submit-btn-bg-color);
+  opacity: 1;
+  transition: transform var(--transition-duration) var(--timing-function),
+    opacity var(--transition-duration) var(--timing-function);
+}
+
+.authorization-form-submit:hover,
+.authorization-form-submit:focus,
+.authorization-sign-in-btn:hover,
+.authorization-sign-in-btn:focus {
+  transform: scale(1.03);
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .authorization-form-submit,
+  .authorization-sign-in-btn {
+    min-height: 64px;
+    padding: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.33px;
+  }
+}
+
+.authorization-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.authorization-btn-in,
+.authorization-btn-up {
+  display: block;
+  height: 24px;
+  font-size: 14px;
+  line-height: 1.28px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--auth-sign-in-btn-text-color);
+  transition: color var(--transition-duration) var(--timing-function);
+}
+
+.authorization-btn-in:hover,
+.authorization-btn-up:hover,
+.authorization-btn-in:focus,
+.authorization-btn-up:focus {
+  color: var(--blue-color);
+}
+
+@media screen and (min-width: 768px) {
+  .authorization-btn-in,
+  .authorization-btn-up {
+    font-size: 18px;
+    height: 24px;
+    line-height: 1.33px;
+  }
+}
+
+.authorization-btn-active {
+  color: var(--blue-color);
+  text-decoration: underline;
+}
+
+.valid {
+  border-color: #008000;
+}
+
+.invalid {
+  border-color: #ff0000;
+}

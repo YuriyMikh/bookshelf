@@ -1,0 +1,11 @@
+@import './base/common.css';
+@import './base/container.css';
+@import './layout/header.css';
+@import './layout/aside-categories.css';
+@import './layout/aside-support-ukraine.css';
+@import './layout/main-page.css';
+@import './layout/modal-window.css';
+@import './layout/burger-menu.css';
+@import './layout/autorization-window.css';
+@import './layout/loader.css';
+@import './layout/scroll-up.css';
