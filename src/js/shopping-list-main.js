@@ -102,6 +102,7 @@ function deleteCard() {
   }
 }
 
+//функція відмальовки порожнього кошику
 function emptyShoppingMarkup() {
   return `
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
