@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://YuriyMikh.github.io/jsdeploy",
+  "homepage": "https://YuriyMikh.github.io/bookshelf",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /jsdeploy/"
+    "build": "parcel build src/*.html --public-url /bookshelf/"
   },
   "repository": {
     "type": "git",
